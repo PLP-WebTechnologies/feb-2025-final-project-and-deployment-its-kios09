@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Blog - Home</title>
+    <meta name="description" content="A blog about technology, programming, and web development">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 class="logo">Tech Insights</h1>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="burger">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="hero">
+            <h2>Welcome to Tech Insights</h2>
+            <p>Your source for the latest in technology and programming</p>
+            <button id="cta-button">Explore Articles</button>
+        </section>
+
+        <section class="featured-posts" id="featured-posts">
+            <h2>Featured Posts</h2>
+            <div class="posts-grid">
+                <article class="post-card">
+                    <img src="https://via.placeholder.com/400x250" alt="JavaScript ES6 Features">
+                    <div class="post-content">
+                        <h3>JavaScript ES6 Features You Should Know</h3>
+                        <p class="post-meta">Published on <time datetime="2023-05-15">May 15, 2023</time></p>
+                        <p>A deep dive into the most useful ES6 features that every JavaScript developer should master...</p>
+                        <a href="posts/post1.html" class="read-more">Read More</a>
+                    </div>
+                </article>
+
+                <article class="post-card">
+                    <img src="https://via.placeholder.com/400x250" alt="CSS Grid Layout">
+                    <div class="post-content">
+                        <h3>Mastering CSS Grid Layout</h3>
+                        <p class="post-meta">Published on <time datetime="2023-04-28">April 28, 2023</time></p>
+                        <p>Learn how to create complex responsive layouts with CSS Grid, the modern solution for web design...</p>
+                        <a href="posts/post2.html" class="read-more">Read More</a>
+                    </div>
+                </article>
+
+                <article class="post-card">
+                    <img src="https://via.placeholder.com/400x250" alt="React Hooks">
+                    <div class="post-content">
+                        <h3>React Hooks Explained</h3>
+                        <p class="post-meta">Published on <time datetime="2023-04-10">April 10, 2023</time></p>
+                        <p>Understanding React Hooks and how they can simplify your functional components and state management...</p>
+                        <a href="posts/post3.html" class="read-more">Read More</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="newsletter">
+            <h2>Subscribe to Our Newsletter</h2>
+            <form id="newsletter-form">
+                <input type="email" id="email" placeholder="Enter your email" required>
+                <button type="submit">Subscribe</button>
+            </form>
+            <p id="form-feedback"></p>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Tech Insights. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

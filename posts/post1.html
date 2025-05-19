@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript ES6 Features - Tech Blog</title>
+    <link rel="stylesheet" href="../../css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <h1 class="logo">Tech Insights</h1>
+        <nav>
+          <ul class="nav-links">
+            <li><a href="../../index.html">Home</a></li>
+            <li><a href="../../about.html">About</a></li>
+            <li><a href="../../contact.html">Contact</a></li>
+          </ul>
+          <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container">
+      <article class="blog-post">
+        <div class="post-header">
+          <h2>JavaScript ES6 Features You Should Know</h2>
+          <div class="post-meta">
+            <span><i class="far fa-user"></i> Alex Johnson</span>
+            <span><i class="far fa-calendar-alt"></i> May 15, 2023</span>
+            <span><i class="far fa-clock"></i> 5 min read</span>
+          </div>
+        </div>
+
+        <img
+          src="https://via.placeholder.com/800x400"
+          alt="JavaScript ES6"
+          class="post-image"
+        />
+
+        <div class="post-content">
+          <p>
+            ECMAScript 2015, also known as ES6, brought significant changes to
+            JavaScript. In this article, we'll explore the most important
+            features that every JavaScript developer should know.
+          </p>
+
+          <h3>1. let and const</h3>
+          <p>
+            ES6 introduced two new ways to declare variables:
+            <code>let</code> and <code>const</code>.
+          </p>
+          <pre><code>// Block-scoped variables
+let name = 'John';
+name = 'Jane'; // Allowed
+
+const PI = 3.14;
+PI = 3.14159; // Error: Assignment to constant variable</code></pre>
+
+          <h3>2. Arrow Functions</h3>
+          <p>
+            Arrow functions provide a concise syntax for writing function
+            expressions.
+          </p>
+          <pre><code>// Traditional function
+function add(a, b) {
+    return a + b;
+}
+
+// Arrow function
+const add = (a, b) => a + b;</code></pre>
+
+          <h3>3. Template Literals</h3>
+          <p>
+            Template literals allow for easier string interpolation and
+            multi-line strings.
+          </p>
+          <pre><code>const name = 'John';
+const greeting = `Hello, ${name}!
+Welcome to our website.`;</code></pre>
+
+          <h3>4. Destructuring Assignment</h3>
+          <p>
+            Destructuring makes it easy to extract values from arrays or
+            objects.
+          </p>
+          <pre><code>// Array destructuring
+const [first, second] = [1, 2];
+
+// Object destructuring
+const {name, age} = {name: 'John', age: 30};</code></pre>
+
+          <h3>5. Default Parameters</h3>
+          <p>Functions can now have default parameter values.</p>
+          <pre><code>function greet(name = 'Guest') {
+    return `Hello, ${name}!`;
+}</code></pre>
+
+          <div class="post-footer">
+            <div class="tags">
+              <span><i class="fas fa-tags"></i></span>
+              <a href="#">JavaScript</a>
+              <a href="#">ES6</a>
+              <a href="#">Web Development</a>
+            </div>
+            <div class="share">
+              <span>Share:</span>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-facebook"></i></a>
+              <a href="#"><i class="fab fa-linkedin"></i></a>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <section class="comments">
+        <h3>Comments</h3>
+        <form id="comment-form">
+          <textarea placeholder="Add your comment..." required></textarea>
+          <button type="submit">Post Comment</button>
+        </form>
+        <div class="comment-list">
+          <!-- Comments would be dynamically added here -->
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <p>&copy; 2023 Tech Insights. All rights reserved.</p>
+        <div class="social-links">
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-github"></i></a>
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="../../js/script.js"></script>
+  </body>
+</html>
